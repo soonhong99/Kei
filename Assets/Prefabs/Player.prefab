@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9211466079277615169}
   - component: {fileID: 8460397770249667344}
   - component: {fileID: 7305312990680443763}
-  - component: {fileID: 3153095544758039953}
+  - component: {fileID: 730152370}
   m_Layer: 0
   m_Name: sword_0
   m_TagString: Untagged
@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3170482869887945441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.064, y: 0.093, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalPosition: {x: 0.07, y: 0.1, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6132752042196359653}
@@ -139,10 +139,18 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  damagePoint: 0
-  pushforce: 2
+  damagePoint: 01000000020000000300000004000000050000000600000007000000
+  pushforce:
+  - 2
+  - 2.2
+  - 2.5
+  - 3
+  - 3.2
+  - 3.6
+  - 4
   weaponLevel: 0
---- !u!95 &3153095544758039953
+  spriteRenderer: {fileID: 9211466079277615169}
+--- !u!95 &730152370
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -288,7 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f3672c214055a4419150ba56a8470fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitpoint: 10
+  hitpoint: 5
   maxHitpoint: 10
   pushRecoverSpeed: 0.2
   speed: 0

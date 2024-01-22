@@ -5538,7 +5538,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_258
+      name: menu_0
       rect:
         serializedVersion: 2
         x: 224
@@ -6885,7 +6885,6 @@ TextureImporter:
       0x72_16x16DungeonTileset.v5_255: -944890763
       0x72_16x16DungeonTileset.v5_256: -1636275517
       0x72_16x16DungeonTileset.v5_257: -2144370874
-      0x72_16x16DungeonTileset.v5_258: 645841234
       0x72_16x16DungeonTileset.v5_259: 56283630
       0x72_16x16DungeonTileset.v5_260: 411765490
       0x72_16x16DungeonTileset.v5_261: -929420947
@@ -7024,6 +7023,7 @@ TextureImporter:
       floor_7: -922235099
       floor_8: 1452257259
       floor_9: -1221595975
+      menu_0: 645841234
       pillar_0: -624374080
       pillar_1: -1421462178
       pillar_2: -1506020104
