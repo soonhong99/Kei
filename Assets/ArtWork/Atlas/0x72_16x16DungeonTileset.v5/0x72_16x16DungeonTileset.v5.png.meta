@@ -750,13 +750,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_30
+      name: sword_0
       rect:
         serializedVersion: 2
-        x: 144
-        y: 224
-        width: 16
-        height: 16
+        x: 147
+        y: 225
+        width: 10
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -771,13 +771,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_31
+      name: sword_1
       rect:
         serializedVersion: 2
-        x: 160
-        y: 224
-        width: 16
-        height: 16
+        x: 163
+        y: 225
+        width: 10
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -792,13 +792,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_32
+      name: sword_2
       rect:
         serializedVersion: 2
-        x: 176
-        y: 224
-        width: 16
-        height: 16
+        x: 179
+        y: 225
+        width: 10
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -813,13 +813,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_33
+      name: sword_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 224
-        width: 16
-        height: 16
+        x: 195
+        y: 225
+        width: 10
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -834,13 +834,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_34
+      name: sword_4
       rect:
         serializedVersion: 2
-        x: 208
-        y: 224
-        width: 16
-        height: 16
+        x: 211
+        y: 225
+        width: 10
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -855,13 +855,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_35
+      name: sword_5
       rect:
         serializedVersion: 2
-        x: 224
-        y: 224
-        width: 16
-        height: 16
+        x: 228
+        y: 225
+        width: 10
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1863,13 +1863,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_83
+      name: sword_6
       rect:
         serializedVersion: 2
-        x: 144
-        y: 192
-        width: 16
-        height: 16
+        x: 147
+        y: 193
+        width: 10
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1884,13 +1884,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_84
+      name: sword_7
       rect:
         serializedVersion: 2
-        x: 160
-        y: 192
-        width: 16
-        height: 16
+        x: 163
+        y: 193
+        width: 10
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4635,7 +4635,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_215
+      name: enemy_0
       rect:
         serializedVersion: 2
         x: 16
@@ -6850,7 +6850,6 @@ TextureImporter:
       0x72_16x16DungeonTileset.v5_212: -1750477880
       0x72_16x16DungeonTileset.v5_213: 780355948
       0x72_16x16DungeonTileset.v5_214: 1180557382
-      0x72_16x16DungeonTileset.v5_215: -1136695989
       0x72_16x16DungeonTileset.v5_216: -1748613390
       0x72_16x16DungeonTileset.v5_217: -146248140
       0x72_16x16DungeonTileset.v5_218: -1102449179
@@ -6927,7 +6926,6 @@ TextureImporter:
       0x72_16x16DungeonTileset.v5_298: 2098892346
       0x72_16x16DungeonTileset.v5_299: 1457692718
       0x72_16x16DungeonTileset.v5_3: -1865398872
-      0x72_16x16DungeonTileset.v5_30: -238904120
       0x72_16x16DungeonTileset.v5_300: -866216142
       0x72_16x16DungeonTileset.v5_301: -448816167
       0x72_16x16DungeonTileset.v5_302: 22591555
@@ -6937,15 +6935,10 @@ TextureImporter:
       0x72_16x16DungeonTileset.v5_306: 58009387
       0x72_16x16DungeonTileset.v5_307: -994814727
       0x72_16x16DungeonTileset.v5_308: -1127380728
-      0x72_16x16DungeonTileset.v5_31: 2074715359
       0x72_16x16DungeonTileset.v5_311: -1068816903
       0x72_16x16DungeonTileset.v5_312: -633416420
       0x72_16x16DungeonTileset.v5_313: -158714022
       0x72_16x16DungeonTileset.v5_314: -1085420687
-      0x72_16x16DungeonTileset.v5_32: -993812700
-      0x72_16x16DungeonTileset.v5_33: -993182106
-      0x72_16x16DungeonTileset.v5_34: 995778939
-      0x72_16x16DungeonTileset.v5_35: 281492525
       0x72_16x16DungeonTileset.v5_36: 1322267966
       0x72_16x16DungeonTileset.v5_37: 1073136295
       0x72_16x16DungeonTileset.v5_38: 2127658408
@@ -6990,8 +6983,6 @@ TextureImporter:
       0x72_16x16DungeonTileset.v5_8: 1920160588
       0x72_16x16DungeonTileset.v5_81: -2141688625
       0x72_16x16DungeonTileset.v5_82: 572316961
-      0x72_16x16DungeonTileset.v5_83: -1028010118
-      0x72_16x16DungeonTileset.v5_84: 784623347
       0x72_16x16DungeonTileset.v5_85: -1169869370
       0x72_16x16DungeonTileset.v5_86: 1149159678
       0x72_16x16DungeonTileset.v5_87: -937442239
@@ -7018,6 +7009,7 @@ TextureImporter:
       create_1: -1432360527
       create_2: -1648826386
       create_3: -828219903
+      enemy_0: -1136695989
       floor_-1: -1368661931
       floor_0: -832375149
       floor_1: -1326160344
@@ -7041,6 +7033,14 @@ TextureImporter:
       stairs_1: -188436008
       stairs_2: -1715979011
       stairs_3: 1460601191
+      sword_0: -238904120
+      sword_1: 2074715359
+      sword_2: -993812700
+      sword_3: -993182106
+      sword_4: 995778939
+      sword_5: 281492525
+      sword_6: -1028010118
+      sword_7: 784623347
       torch_0: -881597209
       torch_1: -1772486144
       torch_2: -883304632
