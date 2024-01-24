@@ -49,6 +49,9 @@ TagManager:
   - name: Actor
     uniqueID: 3051706925
     locked: 0
+  - name: Wall
+    uniqueID: 2527760963
+    locked: 0
   - name: Weapon
     uniqueID: 1602419759
     locked: 0
