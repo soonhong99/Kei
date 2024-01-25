@@ -5811,13 +5811,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_271
+      name: boss_0
       rect:
         serializedVersion: 2
-        x: 176
+        x: 160
         y: 48
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5958,7 +5958,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_278
+      name: enemy_1
       rect:
         serializedVersion: 2
         x: 32
@@ -6897,12 +6897,10 @@ TextureImporter:
       0x72_16x16DungeonTileset.v5_268: 1927758738
       0x72_16x16DungeonTileset.v5_269: 807782032
       0x72_16x16DungeonTileset.v5_270: 1448988613
-      0x72_16x16DungeonTileset.v5_271: 723393033
       0x72_16x16DungeonTileset.v5_272: -1877254767
       0x72_16x16DungeonTileset.v5_273: -1976840536
       0x72_16x16DungeonTileset.v5_276: 157563992
       0x72_16x16DungeonTileset.v5_277: 1576749999
-      0x72_16x16DungeonTileset.v5_278: 1845452991
       0x72_16x16DungeonTileset.v5_279: -713388712
       0x72_16x16DungeonTileset.v5_28: -489773087
       0x72_16x16DungeonTileset.v5_280: 771513231
@@ -7000,6 +6998,7 @@ TextureImporter:
       Healing_Fountain_0: -243422384
       Healing_Fountain_1: -821590327
       Healing_Fountain_2: 1269260822
+      boss_0: 723393033
       chest_0: -518359795
       chest_1: 1855064427
       chest_2: -1941038431
@@ -7009,6 +7008,7 @@ TextureImporter:
       create_2: -1648826386
       create_3: -828219903
       enemy_0: -1136695989
+      enemy_1: 1845452991
       floor_-1: -1368661931
       floor_0: -832375149
       floor_1: -1326160344
