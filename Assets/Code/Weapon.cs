@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
-using UnityEditor.Rendering;
 using UnityEngine;
 
 public class Weapon : Collidable
