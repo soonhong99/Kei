@@ -8,11 +8,14 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     private void Awake()
     {
+        // 다시 돌아갈 때 두개로 중복되는 것을 방지 하기위해서 하나를 destroy
         if (GameManager.instance != null)
         {
             Destroy(gameObject);
             Destroy(player.gameObject);
             Destroy(floatingTextManager.gameObject);
+            Destroy(hud);
+            Destroy(menu);
             return;
         }
 
@@ -21,8 +24,7 @@ public class GameManager : MonoBehaviour
 
         instance = this;
         SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject);
-
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     // Resources
@@ -35,6 +37,9 @@ public class GameManager : MonoBehaviour
     public Player player;
     public Weapon weapon;
     public FloatingTextManager floatingTextManager;
+    public RectTransform hitpointBar;
+    public GameObject hud;
+    public GameObject menu;
 
     // Logic
     public int pesos;
@@ -63,6 +68,14 @@ public class GameManager : MonoBehaviour
         }
 
         return false;
+    }
+
+    // Hit point Bar
+    public void OnHitpointChange()
+    {
+        float ratio = (float)player.hitpoint / (float)player.maxHitpoint;
+        hitpointBar.localScale = new Vector3(1, ratio, 1);
+        Debug.Log("ratio: " + ratio);
     }
 
     // Experience System
@@ -108,6 +121,13 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Level Up!");
         player.OnLevelUp();
+        OnHitpointChange();
+    }
+
+    // On Scene Loaded
+    public void OnSceneLoaded(Scene s, LoadSceneMode mode)
+    {
+        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
     }
 
     // Save state
@@ -133,6 +153,8 @@ public class GameManager : MonoBehaviour
 
     public void LoadState(Scene s, LoadSceneMode mode)
     {
+        SceneManager.sceneLoaded -= LoadState;
+
         if (!PlayerPrefs.HasKey("SaveState"))
             return;
 
@@ -148,7 +170,6 @@ public class GameManager : MonoBehaviour
         // Change the weapon Level
         weapon.SetWeaponLevel(int.Parse(data[3]));
 
-        player.transform.position = GameObject.Find("SpawnPoint").transform.position;
         Debug.Log("LoadState");
     }
 }
