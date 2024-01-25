@@ -10,7 +10,7 @@ public class Fighter : MonoBehaviour
     public int maxHitpoint = 10;
     public float pushRecoverSpeed = 0.2f;
 
-    // Immunity
+    // Immunity - 면역성이 있는
     protected float immuneTime = 1.0f;
     protected float lastImmune;
 
