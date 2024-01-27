@@ -303,8 +303,8 @@ MonoBehaviour:
   pushRecoverSpeed: 0.2
   speed: 0
   weapon: {fileID: 7285089471244401312}
-  ySpeed: 0.75
-  xSpeed: 1
+  ySpeed: 10
+  xSpeed: 10
 --- !u!114 &945764812
 MonoBehaviour:
   m_ObjectHideFlags: 0

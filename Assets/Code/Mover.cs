@@ -12,9 +12,9 @@ public abstract class Mover : Fighter
 
     protected Vector3 moveDelta;
     protected RaycastHit2D hit;
-    
-    public float ySpeed = 0.75f;
-    public float xSpeed = 1.0f;
+
+    public float ySpeed;
+    public float xSpeed;
 
     protected BoxCollider2D boxCollider;
     Rigidbody2D rigid;
@@ -41,14 +41,15 @@ public abstract class Mover : Fighter
         // Reset Move Delta
         moveDelta = new Vector3(input.x * xSpeed, input.y * ySpeed, 0).normalized;
 
+
         // swap sprite direction, wether you're going right or left
-        if (moveDelta.x > 0 )
+        if (moveDelta.x > 0)
         {
             transform.localScale = originalSize;
         }
-        else if (moveDelta.x < 0 )
+        else if (moveDelta.x < 0)
         {
-            transform.localScale = new Vector3(originalSize.x * -1, originalSize.y , originalSize.z);
+            transform.localScale = new Vector3(originalSize.x * -1, originalSize.y, originalSize.z);
         }
 
         // Add push vector, if any
