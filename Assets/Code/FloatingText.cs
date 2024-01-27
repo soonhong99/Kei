@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.WSA;
 
 // 떠다니는 텍스트 (npc와의 대화)
 public class FloatingText
