@@ -22,7 +22,7 @@ public class IntroNPC : Collidable
     protected override void Update()
     {
         // e키와 가까워졌을 때 말을 걸 수 있다.
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose && dialoguePanel != null)
         {
             if (dialoguePanel.activeInHierarchy)
             {
@@ -36,18 +36,28 @@ public class IntroNPC : Collidable
             }
         }
 
-        if(dialogueText.text == dialogue[index])
+        if (dialogueText != null && dialogue != null)
         {
-            contButton.SetActive(true);
+            if (dialogueText.text == dialogue[index])
+            {
+                contButton.SetActive(true);
+            }
         }
 
     }
 
     public void zeroText()
     {
-        dialogueText.text = "";
-        index = 0;
-        dialoguePanel.SetActive(false);
+        //dialogueText.text = "";
+        //index = 0;
+        //dialoguePanel.SetActive(false);
+        if (dialoguePanel.activeSelf && dialogueText.text != "" && dialogueText.text != null && dialogue != null)
+        {
+            dialogueText.text = "";
+            index = 0;
+            dialoguePanel.SetActive(false);
+            StopAllCoroutines();
+        }
     }
 
     IEnumerator Typing()

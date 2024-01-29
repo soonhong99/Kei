@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
             Destroy(floatingTextManager.gameObject);
             Destroy(hud);
             Destroy(menu);
+            Destroy(npc.gameObject);
             return;
         }
 
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
     public Animator deathMenuAnim;
     public GameObject hud;
     public GameObject menu;
+    public IntroNPC npc;
 
     // Logic
     public int pesos;
@@ -151,7 +153,9 @@ public class GameManager : MonoBehaviour
         s += playerSprites.ToString() + "|";
         s += pesos.ToString() + "|";
         s += experience.ToString() + "|";
-        s += weapon.weaponLevel.ToString();
+        s += weapon.weaponLevel.ToString() + "|";
+        s += player.hitpoint.ToString() + "|";
+        s += player.maxHitpoint.ToString();
 
         PlayerPrefs.SetString("SaveState", s);
 
@@ -176,6 +180,10 @@ public class GameManager : MonoBehaviour
             player.SetLevel(GetCurrentLevel());
         // Change the weapon Level
         weapon.SetWeaponLevel(int.Parse(data[3]));
+
+        player.hitpoint = int.Parse(data[4]);
+        player.maxHitpoint = int.Parse(data[5]);
+        OnHitpointChange();
 
         Debug.Log("LoadState");
     }

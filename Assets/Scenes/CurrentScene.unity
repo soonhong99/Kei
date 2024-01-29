@@ -4633,6 +4633,7 @@ GameObject:
   - component: {fileID: 1147745031}
   - component: {fileID: 1147745027}
   - component: {fileID: 1147745030}
+  - component: {fileID: 1147745032}
   m_Layer: 7
   m_Name: IntroNPC
   m_TagString: Untagged
@@ -4783,6 +4784,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0017571449, y: 0.0083464235}
   m_Size: {x: 0.08957335, y: 0.14492333}
   m_Direction: 0
+--- !u!114 &1147745032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1147745026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a73ab07a0a2cfa4db4913c9b16269e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1295591727
 GameObject:
   m_ObjectHideFlags: 0
