@@ -76,7 +76,6 @@ public class GameManager : MonoBehaviour
     {
         float ratio = (float)player.hitpoint / (float)player.maxHitpoint;
         hitpointBar.localScale = new Vector3(1, ratio, 1);
-        Debug.Log("ratio: " + ratio);
     }
 
     // Experience System

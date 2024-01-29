@@ -16,7 +16,7 @@ public abstract class Mover : Fighter
     public float ySpeed;
     public float xSpeed;
 
-    protected BoxCollider2D boxCollider;
+    protected CapsuleCollider2D capsuleCollider;
     Rigidbody2D rigid;
     Animator anim;
     SpriteRenderer spriter;
@@ -26,14 +26,14 @@ public abstract class Mover : Fighter
     {
         spriter = GetComponent<SpriteRenderer>();
         rigid = GetComponent<Rigidbody2D>();
-        boxCollider = GetComponent<BoxCollider2D>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
         anim = GetComponent<Animator>();
     }
 
     protected virtual void Start()
     {
         originalSize = transform.localScale;
-        boxCollider = GetComponent<BoxCollider2D>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
     }
 
     protected virtual void UpdateMotor(Vector3 input)
@@ -59,7 +59,7 @@ public abstract class Mover : Fighter
         pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, pushRecoverSpeed);
 
         // make sure we can move in this direction, by casting a box there first, if the box returns null, we're free to move
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
+        hit = Physics2D.BoxCast(transform.position, capsuleCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.y * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
 
         if (hit.collider == null)
         {
@@ -67,7 +67,7 @@ public abstract class Mover : Fighter
             transform.Translate(0, moveDelta.y * Time.deltaTime, 0);
         }
 
-        hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
+        hit = Physics2D.BoxCast(transform.position, capsuleCollider.size, 0, new Vector2(0, moveDelta.y), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Actor", "Blocking"));
         if (hit.collider == null)
         {
             // Make this thing move!

@@ -60,7 +60,7 @@ public class Enemy : Mover
 
         // check for overlaps
         collidingWithPlayer = false;
-        boxCollider.OverlapCollider(filter, hits);
+        capsuleCollider.OverlapCollider(filter, hits);
         for (int i = 0; i < hits.Length; i++)
         {
             if (hits[i] == null)

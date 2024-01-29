@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(CapsuleCollider2D))]
 public class Collidable : MonoBehaviour
 {
     public ContactFilter2D filter;
-    private BoxCollider2D boxCollider;
+    private CapsuleCollider2D capsuleCollider;
     private Collider2D[] hits = new Collider2D[10];
 
     protected virtual void Start()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
     }
 
     protected virtual void Update()
     {
         // Collision work
-        boxCollider.OverlapCollider(filter, hits);
+        capsuleCollider.OverlapCollider(filter, hits);
 
         for (int i = 0; i < hits.Length; i++)
         {

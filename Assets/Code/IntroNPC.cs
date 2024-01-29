@@ -38,7 +38,6 @@ public class IntroNPC : Collidable
 
         if(dialogueText.text == dialogue[index])
         {
-            Debug.Log("can load button");
             contButton.SetActive(true);
         }
 

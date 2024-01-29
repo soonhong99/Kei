@@ -842,11 +842,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293606225}
   m_CullTransparentMesh: 1
---- !u!4 &298403756 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6132752042196359653, guid: a6ff9838b1359fc40bf3f6934562ad10, type: 3}
-  m_PrefabInstance: {fileID: 6132752041940033097}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &330147851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,26 +1749,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -4, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -3, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 5, y: -1, z: 0}
     second:
       serializedVersion: 2
@@ -2576,17 +2551,17 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 110
+  - m_RefCount: 108
     m_Data: {fileID: 11400000, guid: 146984be065abe74a86f5058f5601dda, type: 2}
   - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: 210bff610ca762849946d0f4cee3fd70, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 110
+  - m_RefCount: 108
     m_Data: {fileID: -434979951, guid: 117b8dec05598d649a2cc50e42fc11d9, type: 3}
   - m_RefCount: 10
     m_Data: {fileID: 483671098, guid: 117b8dec05598d649a2cc50e42fc11d9, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 120
+  - m_RefCount: 118
     m_Data:
       e00: 1
       e01: 0
@@ -2605,7 +2580,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 120
+  - m_RefCount: 118
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -17029,6 +17004,7 @@ GameObject:
   - component: {fileID: 1975146833}
   - component: {fileID: 1975146832}
   - component: {fileID: 1975146831}
+  - component: {fileID: 1975146835}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -17158,6 +17134,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1975146835
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975146830}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
 --- !u!1 &2001993500
 GameObject:
   m_ObjectHideFlags: 0
@@ -17627,6 +17619,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 352635346258454390, guid: a6ff9838b1359fc40bf3f6934562ad10, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 933539585744395509, guid: a6ff9838b1359fc40bf3f6934562ad10, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6132752042196359653, guid: a6ff9838b1359fc40bf3f6934562ad10, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -17674,6 +17674,14 @@ PrefabInstance:
     - target: {fileID: 6132752042196359662, guid: a6ff9838b1359fc40bf3f6934562ad10, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460397770249667344, guid: a6ff9838b1359fc40bf3f6934562ad10, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628683551661396663, guid: a6ff9838b1359fc40bf3f6934562ad10, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6ff9838b1359fc40bf3f6934562ad10, type: 3}
@@ -17732,9 +17740,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 8742562166172489078, guid: 383b8461eccf6a748b05586aff3fd581, type: 3}
-      propertyPath: lookAt
-      value: 
-      objectReference: {fileID: 298403756}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383b8461eccf6a748b05586aff3fd581, type: 3}
