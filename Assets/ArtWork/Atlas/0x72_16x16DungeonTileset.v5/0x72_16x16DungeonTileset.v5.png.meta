@@ -3732,13 +3732,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: create_1
+      name: single_crate
       rect:
         serializedVersion: 2
         x: 80
         y: 128
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3753,13 +3753,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: create_3
+      name: double_crate
       rect:
         serializedVersion: 2
         x: 96
         y: 128
         width: 16
-        height: 16
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7004,9 +7004,8 @@ TextureImporter:
       chest_2: -1941038431
       chest_3: -362185184
       create_0: -678487164
-      create_1: -1432360527
       create_2: -1648826386
-      create_3: -828219903
+      double_crate: -828219903
       enemy_0: -1136695989
       enemy_1: 1845452991
       floor_-1: -1368661931
@@ -7029,6 +7028,7 @@ TextureImporter:
       pillar_2: -1506020104
       player_0: 696296180
       player_1: -1007632626
+      single_crate: -1432360527
       stairs_0: -293840412
       stairs_1: -188436008
       stairs_2: -1715979011
