@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
             Destroy(hud);
             Destroy(menu);
             Destroy(npc.gameObject);
+            Destroy(pool);
             return;
         }
 
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
         instance = this;
         SceneManager.sceneLoaded += LoadState;
         SceneManager.sceneLoaded += OnSceneLoaded;
+
     }
 
     // Resources
@@ -35,14 +37,15 @@ public class GameManager : MonoBehaviour
     public List<int> xpTable;
 
     // References
-    public Player player;
-    public Weapon weapon;
+    public Player_Gold player;
+    public Hand weapon;
     public FloatingTextManager floatingTextManager;
     public RectTransform hitpointBar;
     public Animator deathMenuAnim;
     public GameObject hud;
     public GameObject menu;
     public IntroNPC npc;
+    public PoolManager pool;
 
     // Logic
     public int pesos;

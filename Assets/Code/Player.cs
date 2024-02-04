@@ -11,6 +11,8 @@ public class Player : Mover
     private SpriteRenderer swordRenderer;
     private bool isAlive = true;
     private bool isMoving;
+    private float originalXSpeed;
+    private float originalYSpeed;
 
     protected override void Start()
     {
@@ -24,6 +26,24 @@ public class Player : Mover
         {
             swordRenderer = swordTransform.GetComponent<SpriteRenderer>();
         }
+
+        // 초기 속도 설정
+        // originalXSpeed = xSpeed;
+        // originalYSpeed = ySpeed;
+        Debug.Log("originalxspeed: " + originalXSpeed);
+    }
+
+    void Update()
+    {
+        // Shift 키가 눌려 있는지 확인
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            Sprint(true); // 스프린트 활성화
+        }
+        else
+        {
+            Sprint(false); // 스프린트 비활성화
+        }
     }
 
 
@@ -32,13 +52,32 @@ public class Player : Mover
     {
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
-
         // 움직임이 있는지 확인
         isMoving = (x == 0 && y == 0);
         animator.SetBool("IsMoving", isMoving);
 
-        if (isAlive)
-            UpdateMotor(new Vector3(x, y, 0));
+        // if (isAlive)
+            // UpdateMotor(new Vector3(x, y, 0));
+
+    }
+
+    public void SetSpeed(float newSpeedX, float newSpeedY)
+    {
+        // xSpeed = newSpeedX;
+        // ySpeed = newSpeedY;
+    }
+
+    // 예를 들어, 'sprint' 기능을 추가한다면
+    public void Sprint(bool isSprinting)
+    {
+        if (isSprinting)
+        {
+            SetSpeed(originalXSpeed * 2, originalYSpeed * 2); // Sprinting 시 속도 2배
+        }
+        else
+        {
+            SetSpeed(originalXSpeed, originalYSpeed); // Sprinting이 아닐 때는 원래 속도로
+        }
     }
 
     protected override void ReceiveDamage(Damage dmg)

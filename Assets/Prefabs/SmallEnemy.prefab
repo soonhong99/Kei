@@ -218,10 +218,7 @@ MonoBehaviour:
   hitpoint: 3
   maxHitpoint: 3
   pushRecoverSpeed: 0.2
-  speed: 0
   weapon: {fileID: 0}
-  ySpeed: 0.5
-  xSpeed: 0.5
   xpValue: 1
   triggerLength: 0.3
   chaseLength: 1

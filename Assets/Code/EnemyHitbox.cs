@@ -8,7 +8,7 @@ public class EnemyHitbox : Collidable
     public int damage;
     public float pushForce;
 
-    protected override void OnCollide(Collider2D coll)
+    protected override void OnCollide(CapsuleCollider2D coll)
     {
         if (coll.tag == "Fighter" && coll.name == "Player")
         {

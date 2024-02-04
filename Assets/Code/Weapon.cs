@@ -5,6 +5,17 @@ using UnityEngine;
 
 public class Weapon : Collidable
 {
+    // 무기를 쥔 방향
+    public bool isLeft;
+    public SpriteRenderer spriter;
+
+    SpriteRenderer player;
+
+    Vector3 rightPos = new Vector3(0.35f, -0.15f, 0);
+    Vector3 rightPosReverse = new Vector3(-0.15f, -0.15f, 0);
+    Quaternion leftRot = Quaternion.Euler(0, 0, -20);
+    Quaternion leftRotReverse = Quaternion.Euler(0, 0, -160);
+
     // Damage struct
     public int[] damagePoint = {1, 2, 3, 4, 5, 6, 7};
     public float[] pushforce = {2.0f, 2.2f, 2.5f, 3f, 3.2f, 3.6f, 4f};
@@ -25,6 +36,11 @@ public class Weapon : Collidable
 
     }
 
+    private void Awake()
+    {
+        player = GetComponentsInParent<SpriteRenderer>()[1];
+    }
+
     protected override void Update()
     {
         base.Update();
@@ -39,7 +55,16 @@ public class Weapon : Collidable
         }
     }
 
-    protected override void OnCollide(Collider2D coll)
+    private void LateUpdate()
+    {
+        bool isReverse = spriter.flipX;
+
+        transform.localRotation = isReverse ? leftRotReverse : leftRot;
+        spriter.flipY = isReverse;
+        spriter.sortingLayerName = isReverse ? "Interactable" : "Weapon";
+    }
+
+    protected override void OnCollide(CapsuleCollider2D coll)
     {
         if (coll.tag == "Fighter")
         {

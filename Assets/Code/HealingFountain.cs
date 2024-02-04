@@ -9,7 +9,7 @@ public class HealingFountain : Collidable
     private float healCooldown = 1.0f;
     private float lastHeal;
 
-    protected override void OnCollide(Collider2D coll)
+    protected override void OnCollide(CapsuleCollider2D coll)
     {
         // box에 부딪힐 때 플레이어가 아니면 동작하지 않도록 한다.
         if (coll.name != "Player")

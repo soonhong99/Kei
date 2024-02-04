@@ -8,7 +8,7 @@ public class Collidable : MonoBehaviour
 {
     public ContactFilter2D filter;
     private CapsuleCollider2D capsuleCollider;
-    private Collider2D[] hits = new Collider2D[10];
+    private CapsuleCollider2D[] hits = new CapsuleCollider2D[10];
 
     protected virtual void Start()
     {
@@ -36,7 +36,7 @@ public class Collidable : MonoBehaviour
         
     }
 
-    protected virtual void OnCollide(Collider2D coll)
+    protected virtual void OnCollide(CapsuleCollider2D coll)
     {
         Debug.Log("OnCollide was not implemented in " + this.name);
     }
