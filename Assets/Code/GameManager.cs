@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +13,7 @@ public class GameManager : MonoBehaviour
         // 다시 돌아갈 때 두개로 중복되는 것을 방지 하기위해서 하나를 destroy
         if (GameManager.instance != null)
         {
+            // gameObject: gameManager
             Destroy(gameObject);
             Destroy(player.gameObject);
             Destroy(floatingTextManager.gameObject);
@@ -18,6 +21,7 @@ public class GameManager : MonoBehaviour
             Destroy(menu);
             Destroy(npc.gameObject);
             Destroy(pool);
+            Destroy(audioManager);
             return;
         }
 
@@ -46,6 +50,10 @@ public class GameManager : MonoBehaviour
     public GameObject menu;
     public IntroNPC npc;
     public PoolManager pool;
+    public AudioManager audioManager;
+
+    private string currentSceneName;
+    private string pastSceneName;
 
     // Logic
     public int pesos;
@@ -137,9 +145,39 @@ public class GameManager : MonoBehaviour
     }
 
     // On Scene Loaded
-    public void OnSceneLoaded(Scene s, LoadSceneMode mode)
+    public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        currentSceneName = scene.name;
+
+        if (currentSceneName == "StolenScene")
+        {
+            // player.gameObject.SetActive(true);
+            player.SpriteDisable(true);
+            npc.gameObject.SetActive(true);
+            weapon.gameObject.SetActive(true);
+            audioManager.PlayMusic(currentSceneName);
+            pastSceneName = currentSceneName;
+        }
+        else if (currentSceneName == "ReadyScene")
+        {
+            // player.gameObject.SetActive(true);
+            player.SpriteDisable(true);
+            npc.gameObject.SetActive(true);
+            weapon.gameObject.SetActive(true);
+            audioManager.PlayMusic(currentSceneName);
+            pastSceneName = currentSceneName;
+        }
+        else if (currentSceneName == "StartScene")
+        {
+            //player.gameObject.SetActive(false);
+            player.SpriteDisable(false);
+            npc.gameObject.SetActive(false);
+            weapon.gameObject.SetActive(false);
+            audioManager.StopMusic(pastSceneName);
+            return;
+        }
         player.transform.position = GameObject.Find("SpawnPoint").transform.position;
+
     }
 
     // Save state

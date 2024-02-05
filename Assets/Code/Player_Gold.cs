@@ -104,6 +104,19 @@ public class Player_Gold : Mover
         GameManager.instance.deathMenuAnim.SetTrigger("Show");
     }
 
+    public void SpriteDisable(bool SpriteBool)
+    {
+        // SpriteRenderer 비활성화
+        if (spriter != null && SpriteBool == false)
+        {
+            spriter.enabled = false;
+        }
+        else if (spriter != null && SpriteBool == true)
+        {
+            spriter.enabled = true;
+        }
+    }
+
     public void SwapSprite(int skinId)
     {
         GetComponent<SpriteRenderer>().sprite = GameManager.instance.playerSprites[skinId];

@@ -44,17 +44,14 @@ public class Enemy : Mover
             {
                 if (!collidingWithPlayer)
                 {
-                    //UpdateMotor((playerTransform.position - transform.position).normalized);
                 }
             }
             else
             {
-                //UpdateMotor(startingPosition - transform.position);
             }
         }
         else
         {
-            //UpdateMotor(startingPosition - transform.position);
             chasing = false;
         }
 

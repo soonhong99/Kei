@@ -9,10 +9,12 @@ public class AudioManager : MonoBehaviour
     [Header("------------ Audio Source -------------")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
+    
 
     [Header("------------ Audio Clip ---------------")]
     public AudioClip ReadyBackGround;
     public AudioClip StartBackGround;
+    public AudioClip StolenBackGround;
     public AudioClip Death;
     public AudioClip CheckPoint;
     public AudioClip PortalIn;
@@ -30,17 +32,39 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        if (currentSceneName == "ReadyScene")
-        {
-            musicSource.clip = ReadyBackGround;
-            musicSource.Play();
-        }
-        else if (currentSceneName == "StartScene")
+        if (currentSceneName == "StartScene")
         {
             musicSource.clip = StartBackGround;
             musicSource.Play();
         }
+    }
 
+    public void PlayMusic(string SceneName)
+    {
+        if (SceneName == "StolenScene")
+        {
+            musicSource.clip = StolenBackGround;
+            musicSource.Play();
+        }
+        else if (currentSceneName == "ReadyScene")
+        {
+            musicSource.clip = ReadyBackGround;
+            musicSource.Play();
+        }
+    }
+
+    public void StopMusic(string pastSceneName)
+    {
+        if (pastSceneName == "StolenScene")
+        {
+            musicSource.clip = StolenBackGround;
+            musicSource.Stop();
+        }
+        else if (pastSceneName == "ReadyScene")
+        {
+            musicSource.clip = ReadyBackGround;
+            musicSource.Stop();
+        }
     }
 
     public void PlaySFX(AudioClip clip)

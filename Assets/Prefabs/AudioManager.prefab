@@ -50,6 +50,7 @@ MonoBehaviour:
   SFXSource: {fileID: 164022236441659216}
   ReadyBackGround: {fileID: 8300000, guid: 82896015ce5a46f4197f2d47b1073b63, type: 3}
   StartBackGround: {fileID: 8300000, guid: 46c06742fc9831043b908e3729dd686d, type: 3}
+  StolenBackGround: {fileID: 8300000, guid: 1d8d9f46aece9384fa403eb23db2f369, type: 3}
   Death: {fileID: 0}
   CheckPoint: {fileID: 0}
   PortalIn: {fileID: 0}
