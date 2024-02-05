@@ -20,6 +20,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip PortalIn;
     public AudioClip PortalOut;
     public AudioClip Click;
+    public AudioClip BoxAttack;
     public AudioClip[] RandomMoving;
     public AudioClip[] RandomSword;
 

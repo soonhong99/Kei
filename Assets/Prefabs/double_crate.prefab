@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 899986186649947205}
   - component: {fileID: 899986186649947206}
   - component: {fileID: 899986186649947203}
+  - component: {fileID: 10362670}
   m_Layer: 6
   m_Name: double_crate
   m_TagString: Fighter
@@ -127,3 +128,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16161616, y: 0.32323232}
   m_EdgeRadius: 0
+--- !u!114 &10362670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899986186649947207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934a5005cc9adc34e83d77241796a590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppedItemPrefab: {fileID: 6992600257086813162, guid: dc6d06c070458474398d4d895b3a4fc3, type: 3}
+  dropList:
+  - {fileID: 11400000, guid: f4171446886553447b3c42ac9a6f2fab, type: 2}
+  - {fileID: 11400000, guid: f7d80713e5f27ef4ca6108dc73a549a6, type: 2}
+  - {fileID: 11400000, guid: 1fa50690002f271428decc7fe79b824f, type: 2}
+  - {fileID: 11400000, guid: 3a136fe4290cad44f9e4c7506d362432, type: 2}

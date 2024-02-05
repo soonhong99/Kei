@@ -56,6 +56,7 @@ MonoBehaviour:
   PortalIn: {fileID: 0}
   PortalOut: {fileID: 0}
   Click: {fileID: 8300000, guid: 7e58c1718e011c847949792efd486a17, type: 3}
+  BoxAttack: {fileID: 8300000, guid: 5f81bdff582c2fc4488e1129bc037245, type: 3}
   RandomMoving:
   - {fileID: 8300000, guid: 33723cbe063127c4ca08b7f627760f1e, type: 3}
   - {fileID: 8300000, guid: f2d112cd27f01be4da1fd1979addfb73, type: 3}
