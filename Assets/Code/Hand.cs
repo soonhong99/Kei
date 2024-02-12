@@ -24,9 +24,12 @@ public class Hand : Collidable
 
     private float lastSoundTime = -1; // 마지막 사운드 재생 시간을 추적하기 위한 변수
 
+    public static Hand instance;
+
     protected override void Start()
     {
         base.Start();
+        instance = this;
     }
 
     private void Awake()

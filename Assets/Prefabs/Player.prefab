@@ -276,6 +276,37 @@ CapsuleCollider2D:
   m_Offset: {x: 0.48023874, y: 0.00670914}
   m_Size: {x: 0.43950436, y: 0.37865415}
   m_Direction: 1
+--- !u!1 &2426927781132779350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2967117371772693025}
+  m_Layer: 7
+  m_Name: ChatPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2967117371772693025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426927781132779350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.004, y: 0.103, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6132752042196359653}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3170482869887945441
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +627,7 @@ GameObject:
   - component: {fileID: 945764818}
   - component: {fileID: 945764812}
   - component: {fileID: 945764819}
+  - component: {fileID: 1529998581837659064}
   m_Layer: 7
   m_Name: Player
   m_TagString: Fighter
@@ -620,6 +652,7 @@ Transform:
   - {fileID: 1726721991645869142}
   - {fileID: 2469850770976859828}
   - {fileID: 904360054797801169}
+  - {fileID: 2967117371772693025}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -793,4 +826,24 @@ MonoBehaviour:
   weapon: {fileID: 1726721991645869142}
   inputVec: {x: 0, y: 0}
   speed: 1
-  audioManager: {fileID: 164022235059036480, guid: 01d129fce2d2858419098da13fc3621d, type: 3}
+  isAlive: 1
+  isMoving: 0
+  lastSoundTime: -1
+  audioManager: {fileID: 0}
+--- !u!114 &1529998581837659064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6132752042196359662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb09bf93ba692b4ea364ab251a1a660, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences:
+  - hmmm
+  - im so strong!!!!
+  chatTr: {fileID: 2967117371772693025}
+  chatBoxPrefab: {fileID: 2873018567449852430, guid: 43c65e5b8c3d0ce45b6ea214f8537633, type: 3}

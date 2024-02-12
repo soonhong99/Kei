@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44e384a6904651847808297942cffcc7, type: 3}
   m_Name: flaskRed
   m_EditorClassIdentifier: 
-  dropSprite: {fileID: 21300000, guid: 1114e0c24a743774a9792997c4591be4, type: 3}
+  image: {fileID: 21300000, guid: 1114e0c24a743774a9792997c4591be4, type: 3}
   dropName: flaskRed
   dropChance: 30
+  actionType: 2
+  itemType: 1
+  stackable: 1

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class DropBag : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class DropBag : MonoBehaviour
         return null;
     }
 
+    // ë“œë ì•„ì´í…œì„ ë³µì œ
     public void InstantiateDrop(Vector3 spawnPosition)
     {
         DropItem droppedItem = GetDroppedItem();
@@ -37,9 +39,12 @@ public class DropBag : MonoBehaviour
         {
             Debug.Log(droppedItem);
             GameObject DropGameObject = Instantiate(droppedItemPrefab, spawnPosition, Quaternion.identity);
-            DropGameObject.GetComponent<SpriteRenderer>().sprite = droppedItem.dropSprite;
+            //DropGameObject.GetComponent<SpriteRenderer>().sprite = droppedItem.image;
 
-            // ÀÌ°É ¾²¸é ¾ÆÀÌÅÛÀÌ ¾îµğ·Ğ°¡ ³¯¶ó°¨
+            // ì „ë¦¬í’ˆì— ëŒ€í•œ ì´ë¯¸ì§€ ê°–ê³  ì˜¤ê¸°
+            DropGameObject.GetComponent<Loot>().Initialize(droppedItem);
+
+            // ì´ê±¸ ì“°ë©´ ì•„ì´í…œì´ ì–´ë””ë¡ ê°€ ë‚ ë¼ê°
             //float dropForce = 300f;
             //Vector2 dropDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
             //DropGameObject.GetComponent<Rigidbody2D>().AddForce(dropDirection * dropForce, ForceMode2D.Impulse);

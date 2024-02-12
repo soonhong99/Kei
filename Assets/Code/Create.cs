@@ -8,14 +8,19 @@ public class Create : Fighter
     AudioManager audioManager;
     private float lastSoundTime = -1; // 마지막 사운드 재생 시간을 추적하기 위한 변수
 
+
     private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        
     }
 
     protected override void Death()
     {
         GetComponent<DropBag>().InstantiateDrop(transform.position);
+
+        // 죽었을 때 player에게 아이템이 들어오고, 퀵슬롯에 해당 아이템이 생길 수 있게 해야됨.
+        // 아이템이 들어오게 하는 것이 loot 코드에 있다.
         Destroy(gameObject);
     }
 

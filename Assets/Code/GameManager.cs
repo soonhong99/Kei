@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
             Destroy(npc.gameObject);
             Destroy(pool);
             Destroy(audioManager);
+            Destroy(inventoryManager);
             return;
         }
 
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour
     public IntroNPC npc;
     public PoolManager pool;
     public AudioManager audioManager;
+    public InventoryManager inventoryManager;
 
     private string currentSceneName;
     private string pastSceneName;

@@ -9,9 +9,9 @@ public class Player_Gold : Mover
     public Vector2 inputVec;
     public float speed;
 
-    private bool isAlive = true;
-    private bool isMoving;
-    private float lastSoundTime = -1; // 마지막 사운드 재생 시간을 추적하기 위한 변수
+    [SerializeField] private bool isAlive = true;
+    [SerializeField] private bool isMoving;
+    [SerializeField] private float lastSoundTime = -1; // 마지막 사운드 재생 시간을 추적하기 위한 변수
 
     SpriteRenderer swordRenderer;
     Rigidbody2D rigid;
@@ -23,7 +23,6 @@ public class Player_Gold : Mover
     {
         base.Start();
     }
-
 
     private void Awake()
     {
