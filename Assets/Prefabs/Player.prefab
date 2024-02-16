@@ -842,8 +842,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deb09bf93ba692b4ea364ab251a1a660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sentences:
-  - hmmm
-  - im so strong!!!!
+  flaskBlueSentences:
+  - My feet get lighter
+  - But that's how loud it is
+  flaskGreenSentences:
+  - my speed is down..
+  - monster cant notice it..!
+  flaskRedSentences:
+  - It's high in adrenaline!
+  - defense gets lower too
+  flaskYellowSentences:
+  - IM ALL better now!
+  nullSentences:
+  - 'take our treasure '
+  - with us...!
   chatTr: {fileID: 2967117371772693025}
   chatBoxPrefab: {fileID: 2873018567449852430, guid: 43c65e5b8c3d0ce45b6ea214f8537633, type: 3}

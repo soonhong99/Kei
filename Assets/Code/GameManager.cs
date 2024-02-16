@@ -160,6 +160,15 @@ public class GameManager : MonoBehaviour
             audioManager.PlayMusic(currentSceneName);
             pastSceneName = currentSceneName;
         }
+        else if (currentSceneName == "ChaseScene")
+        {
+            // player.gameObject.SetActive(true);
+            player.SpriteDisable(true);
+            npc.gameObject.SetActive(true);
+            weapon.gameObject.SetActive(true);
+            audioManager.PlayMusic(currentSceneName);
+            pastSceneName = currentSceneName;
+        }
         else if (currentSceneName == "ReadyScene")
         {
             // player.gameObject.SetActive(true);

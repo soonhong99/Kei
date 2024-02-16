@@ -16,6 +16,8 @@ public class Flask : MonoBehaviour
     [SerializeField] private Hand hand;
     [SerializeField] private int originalDamageAmount;
     [SerializeField] private float originalPushForce;
+    [SerializeField] private ChatBox chatBox;
+
     private void Start()
     {
         player = FindObjectOfType<Player_Gold>();
@@ -40,6 +42,7 @@ public class Flask : MonoBehaviour
         // SpeedUp();
         // 코루틴 함수는 활성화된 게임 옵젝에서만 돌아갈 수 있다.
         StartCoroutine(SpeedBoostCoroutine());
+        chatBox.MessagePlayer("flaskBlue");
     }
 
     // speed down
@@ -47,14 +50,15 @@ public class Flask : MonoBehaviour
     public void flaskGreen()
     {
         StartCoroutine(SpeedDownCoroutine());
+        chatBox.MessagePlayer("flaskGreen");
     }
 
     // power up
     // 그러나 몬스터들한테도 세게 맞는다.
     public void flaskRed()
     {
-        // PowerUp();
         StartCoroutine(PowerUpCoroutine());
+        chatBox.MessagePlayer("flaskRed");
     }
 
     // Recovery
@@ -62,6 +66,7 @@ public class Flask : MonoBehaviour
     public void flaskYellow()
     {
         Recovery();
+        chatBox.MessagePlayer("flaskYellow");
     }
 
     private IEnumerator SpeedBoostCoroutine()

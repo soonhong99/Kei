@@ -1023,7 +1023,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_43
+      name: door_1
       rect:
         serializedVersion: 2
         x: 368
@@ -1044,7 +1044,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_44
+      name: door_2
       rect:
         serializedVersion: 2
         x: 384
@@ -1569,7 +1569,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_69
+      name: door_3
       rect:
         serializedVersion: 2
         x: 368
@@ -1590,7 +1590,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_70
+      name: door_4
       rect:
         serializedVersion: 2
         x: 384
@@ -2346,11 +2346,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_106
+      name: wall_red
       rect:
         serializedVersion: 2
         x: 192
-        y: 176
+        y: 175
         width: 16
         height: 16
       alignment: 0
@@ -2388,7 +2388,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_108
+      name: wall_blue
       rect:
         serializedVersion: 2
         x: 224
@@ -2787,7 +2787,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_127
+      name: wall_bluewater_1
       rect:
         serializedVersion: 2
         x: 192
@@ -2808,7 +2808,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_128
+      name: wall_bluewater_2
       rect:
         serializedVersion: 2
         x: 208
@@ -2829,7 +2829,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_129
+      name: wall_redwater_1
       rect:
         serializedVersion: 2
         x: 224
@@ -2850,7 +2850,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_130
+      name: wall_redwater_2
       rect:
         serializedVersion: 2
         x: 240
@@ -3333,7 +3333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_153
+      name: wall_bluewater_3
       rect:
         serializedVersion: 2
         x: 192
@@ -3354,7 +3354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_154
+      name: wall_bluewater_4
       rect:
         serializedVersion: 2
         x: 208
@@ -3375,7 +3375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_155
+      name: wall_redwater_3
       rect:
         serializedVersion: 2
         x: 224
@@ -3396,7 +3396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_156
+      name: wall_redwater_4
       rect:
         serializedVersion: 2
         x: 240
@@ -3984,7 +3984,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_184
+      name: Ladder
       rect:
         serializedVersion: 2
         x: 288
@@ -6751,9 +6751,7 @@ TextureImporter:
       0x72_16x16DungeonTileset.v5_103: -682820813
       0x72_16x16DungeonTileset.v5_104: 1703396532
       0x72_16x16DungeonTileset.v5_105: 1753195765
-      0x72_16x16DungeonTileset.v5_106: -984403376
       0x72_16x16DungeonTileset.v5_107: 1943885168
-      0x72_16x16DungeonTileset.v5_108: 1996415362
       0x72_16x16DungeonTileset.v5_109: 1423627182
       0x72_16x16DungeonTileset.v5_11: -2010269137
       0x72_16x16DungeonTileset.v5_110: -1599005403
@@ -6772,11 +6770,7 @@ TextureImporter:
       0x72_16x16DungeonTileset.v5_124: 334331254
       0x72_16x16DungeonTileset.v5_125: -835580849
       0x72_16x16DungeonTileset.v5_126: 419438082
-      0x72_16x16DungeonTileset.v5_127: -1960593287
-      0x72_16x16DungeonTileset.v5_128: -1692347451
-      0x72_16x16DungeonTileset.v5_129: 794057371
       0x72_16x16DungeonTileset.v5_13: 855646420
-      0x72_16x16DungeonTileset.v5_130: 635201343
       0x72_16x16DungeonTileset.v5_131: 656544368
       0x72_16x16DungeonTileset.v5_132: 425936642
       0x72_16x16DungeonTileset.v5_133: 70638759
@@ -6794,10 +6788,6 @@ TextureImporter:
       0x72_16x16DungeonTileset.v5_150: -960826540
       0x72_16x16DungeonTileset.v5_151: -1855845400
       0x72_16x16DungeonTileset.v5_152: -336326617
-      0x72_16x16DungeonTileset.v5_153: -898924042
-      0x72_16x16DungeonTileset.v5_154: -1212847261
-      0x72_16x16DungeonTileset.v5_155: 526424638
-      0x72_16x16DungeonTileset.v5_156: 1535916658
       0x72_16x16DungeonTileset.v5_157: -1847818526
       0x72_16x16DungeonTileset.v5_158: -1348422881
       0x72_16x16DungeonTileset.v5_159: -1253911912
@@ -6821,7 +6811,6 @@ TextureImporter:
       0x72_16x16DungeonTileset.v5_181: -1056766329
       0x72_16x16DungeonTileset.v5_182: 1345506364
       0x72_16x16DungeonTileset.v5_183: 1777763789
-      0x72_16x16DungeonTileset.v5_184: 236068369
       0x72_16x16DungeonTileset.v5_185: 793127160
       0x72_16x16DungeonTileset.v5_186: -949040512
       0x72_16x16DungeonTileset.v5_187: 497708751
@@ -6944,8 +6933,6 @@ TextureImporter:
       0x72_16x16DungeonTileset.v5_40: -838241104
       0x72_16x16DungeonTileset.v5_41: 1579841301
       0x72_16x16DungeonTileset.v5_42: 1730681340
-      0x72_16x16DungeonTileset.v5_43: 985520516
-      0x72_16x16DungeonTileset.v5_44: -2140220042
       0x72_16x16DungeonTileset.v5_45: 1131293357
       0x72_16x16DungeonTileset.v5_46: 965109815
       0x72_16x16DungeonTileset.v5_47: 1614449289
@@ -6967,9 +6954,7 @@ TextureImporter:
       0x72_16x16DungeonTileset.v5_66: -933109742
       0x72_16x16DungeonTileset.v5_67: 1432886797
       0x72_16x16DungeonTileset.v5_68: 1225537807
-      0x72_16x16DungeonTileset.v5_69: -1573375685
       0x72_16x16DungeonTileset.v5_7: 2060750934
-      0x72_16x16DungeonTileset.v5_70: 927755552
       0x72_16x16DungeonTileset.v5_71: 882811
       0x72_16x16DungeonTileset.v5_72: 739043007
       0x72_16x16DungeonTileset.v5_73: 1736993385
@@ -6998,6 +6983,7 @@ TextureImporter:
       Healing_Fountain_0: -243422384
       Healing_Fountain_1: -821590327
       Healing_Fountain_2: 1269260822
+      Ladder: 236068369
       boss_0: 723393033
       chest_0: -518359795
       chest_1: 1855064427
@@ -7005,6 +6991,10 @@ TextureImporter:
       chest_3: -362185184
       create_0: -678487164
       create_2: -1648826386
+      door_1: 985520516
+      door_2: -2140220042
+      door_3: -1573375685
+      door_4: 927755552
       double_crate: -828219903
       enemy_0: -1136695989
       enemy_1: 1845452991
@@ -7060,6 +7050,16 @@ TextureImporter:
       wall_7: -1279058198
       wall_8: -749105437
       wall_9: -351141292
+      wall_blue: 1996415362
+      wall_bluewater_1: -1960593287
+      wall_bluewater_2: -1692347451
+      wall_bluewater_3: -898924042
+      wall_bluewater_4: -1212847261
+      wall_red: -984403376
+      wall_redwater_1: 794057371
+      wall_redwater_2: 635201343
+      wall_redwater_3: 526424638
+      wall_redwater_4: 1535916658
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

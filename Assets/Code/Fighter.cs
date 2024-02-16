@@ -11,7 +11,7 @@ public class Fighter : MonoBehaviour
     public float pushRecoverSpeed = 0.2f;
 
     // Immunity - 면역성이 있는
-    protected float immuneTime = 1.0f;
+    protected float immuneTime = 0.3f;
     protected float lastImmune;
 
     // Push
@@ -27,7 +27,7 @@ public class Fighter : MonoBehaviour
             hitpoint -= dmg.damageAmount;
             pushDirection = (transform.position - dmg.origin).normalized * dmg.pushforce;
 
-            GameManager.instance.ShowText(dmg.damageAmount.ToString(), 25, Color.red, transform.position, Vector3.zero, 0.5f);
+            GameManager.instance.ShowText(dmg.damageAmount.ToString(), 50, Color.red, transform.position, Vector3.zero, 0.5f);
 
             if (hitpoint <= 0)
             {

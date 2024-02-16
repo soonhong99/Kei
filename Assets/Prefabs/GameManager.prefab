@@ -68,6 +68,7 @@ MonoBehaviour:
   npc: {fileID: 0}
   pool: {fileID: 0}
   audioManager: {fileID: 0}
+  inventoryManager: {fileID: 0}
   pesos: 0
   experience: 0
 --- !u!114 &7835307400906120370

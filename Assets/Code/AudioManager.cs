@@ -42,7 +42,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic(string SceneName)
     {
-        if (SceneName == "StolenScene")
+        if (SceneName == "StolenScene" || SceneName == "ChaseScene")
         {
             musicSource.clip = StolenBackGround;
             musicSource.Play();
@@ -56,7 +56,7 @@ public class AudioManager : MonoBehaviour
 
     public void StopMusic(string pastSceneName)
     {
-        if (pastSceneName == "StolenScene")
+        if (pastSceneName == "StolenScene" || pastSceneName == "ChaseScene")
         {
             musicSource.clip = StolenBackGround;
             musicSource.Stop();
